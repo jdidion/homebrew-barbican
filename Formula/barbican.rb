@@ -7,34 +7,33 @@
 # user configuration, not Homebrew-managed state. See the caveats
 # block below.
 class Barbican < Formula
-  desc "Pre-execution safety checks for AI-generated shell commands (Claude Code hook + MCP)"
+  desc "Safety-check layer for AI-generated shell commands (Claude Code)"
   homepage "https://github.com/jdidion/barbican"
-  version "1.5.0"
   license "MIT"
 
   # Prebuilt release binaries from the GitHub Releases page. Every
   # asset is covered by a Sigstore build-provenance attestation
   # (verifiable with `gh attestation verify TARBALL --repo
   # jdidion/barbican`); the SHA256s below pin the specific bytes this
-  # formula was audited against.
+  # formula was audited against. `version` is derived from the URL.
   on_macos do
     on_arm do
-      url "https://github.com/jdidion/barbican/releases/download/v#{version}/barbican-#{version}-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/jdidion/barbican/releases/download/v1.5.0/barbican-1.5.0-aarch64-apple-darwin.tar.gz"
       sha256 "3a00c414118fd5896d87cf4c3ea4aa1933c34051fb5964bbcef14def6b7b0149"
     end
     on_intel do
-      url "https://github.com/jdidion/barbican/releases/download/v#{version}/barbican-#{version}-x86_64-apple-darwin.tar.gz"
+      url "https://github.com/jdidion/barbican/releases/download/v1.5.0/barbican-1.5.0-x86_64-apple-darwin.tar.gz"
       sha256 "bc9802f22944512e11987ace051b8ad43b2d778d6fbec63a1c22818c2c1c26db"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jdidion/barbican/releases/download/v#{version}/barbican-#{version}-aarch64-unknown-linux-gnu.tar.gz"
+      url "https://github.com/jdidion/barbican/releases/download/v1.5.0/barbican-1.5.0-aarch64-unknown-linux-gnu.tar.gz"
       sha256 "14b05f9314a914b45892c0e3df4abae1cdba4ce7db421f45f3d14169852f0d31"
     end
     on_intel do
-      url "https://github.com/jdidion/barbican/releases/download/v#{version}/barbican-#{version}-x86_64-unknown-linux-gnu.tar.gz"
+      url "https://github.com/jdidion/barbican/releases/download/v1.5.0/barbican-1.5.0-x86_64-unknown-linux-gnu.tar.gz"
       sha256 "326d189ef6dbb318d016842cfeb1793d227b3e787a15750d45ace38ada7d9915"
     end
   end
