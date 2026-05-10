@@ -18,23 +18,23 @@ class Barbican < Formula
   # formula was audited against. `version` is derived from the URL.
   on_macos do
     on_arm do
-      url "https://github.com/jdidion/barbican/releases/download/v1.5.2/barbican-1.5.2-aarch64-apple-darwin.tar.gz"
-      sha256 "f4c74e12b8cf6151863cd26454fa66e6968a4eb5489b07ca3f1cd0b438ec0679"
+      url "https://github.com/jdidion/barbican/releases/download/v1.5.3/barbican-1.5.3-aarch64-apple-darwin.tar.gz"
+      sha256 "b927b4cfb911072b9b6af40b283e96ed9e5978758ea93d9361e00280b5c4f92a"
     end
     on_intel do
-      url "https://github.com/jdidion/barbican/releases/download/v1.5.2/barbican-1.5.2-x86_64-apple-darwin.tar.gz"
-      sha256 "c1102bf82526b4863f8f5676a10c90d1a91beb4876a561067112d596acf39406"
+      url "https://github.com/jdidion/barbican/releases/download/v1.5.3/barbican-1.5.3-x86_64-apple-darwin.tar.gz"
+      sha256 "a95b5e51987ba30f1cb5530b3217ba6610a0c21bbd606289e3b855869efe10ed"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jdidion/barbican/releases/download/v1.5.2/barbican-1.5.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "55a9a0b530020f82033da983ec1eebea7345e11b8fff2bebf063a58d893d1a70"
+      url "https://github.com/jdidion/barbican/releases/download/v1.5.3/barbican-1.5.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cd50d6ad8efbee8305bc1a8661d2cc143242b23a393ece15a4231e6d6f2a36bd"
     end
     on_intel do
-      url "https://github.com/jdidion/barbican/releases/download/v1.5.2/barbican-1.5.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "072987ba9c2006749cac8760ca7155a7ea7dd4bf993f222da7b7ae3ce77ce71e"
+      url "https://github.com/jdidion/barbican/releases/download/v1.5.3/barbican-1.5.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "833fd4da9c83023e0f3aa73ee75378ae1c2c9f870c92a94eb66f4deeb4089f91"
     end
   end
 
